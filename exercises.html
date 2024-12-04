@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Облік фізичних вправ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Головна</a>
+            <a href="exercises.html">Вправи</a>
+            <a href="about.html">Про нас</a>
+        </nav>
+    </header>
+
+
+        <section class="exercise-section">
+            <h1>Облік результатів виконання вправ</h1>
+            
+            <div class="form-container">
+                <h2>Додати/Редагувати запис</h2>
+                <form id="exerciseForm">
+                    <input type="text" id="name" placeholder="ПІБ" required>
+                    <input type="number" id="km3" placeholder="3 км (сек)" required>
+                    <input type="number" id="m100" placeholder="100 м (сек)" required>
+                    <input type="number" id="pullUps" placeholder="Підтягування" required>
+                    <input type="number" id="six100m" placeholder="6 по 100 м (сек)" required>
+                    <button type="submit">Додати</button>
+                </form>
+            </div>
+
+            <table id="exerciseTable">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>ПІБ</th>
+                        <th>3 км</th>
+                        <th>100 м</th>
+                        <th>Підтягування</th>
+                        <th>6 по 100 м</th>
+                        <th>Дії</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Контактна інформація: info@portal.com | Тел: +380 123 456 789</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
